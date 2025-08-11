@@ -21,9 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased 
+                    min-h-screen w-full bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100
+                    bg-fixed`}
       >
-        <div className="max-w-4xl mx-auto p-4">
+        <div className="max-w-4xl mx-auto p-4 animate-fadeIn">
           <Navbar />
           <div className="mt-6">
             {children}
